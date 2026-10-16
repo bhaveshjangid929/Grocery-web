@@ -57,7 +57,10 @@ useEffect(() => {
     const cards = gsap.utils.toArray(".category-card");
 
     cards.forEach((card, index) => {
-      const fromX = index % 2 === 0 ? -100 : 100;
+      const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+      const fromX = isMobile ? 0 : index % 2 === 0 ? -100 : 100;
+      const fromY = isMobile ? 40 : 0;
 
       gsap.fromTo(
         card,
