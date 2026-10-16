@@ -181,27 +181,6 @@ function Navbar({cart}) {
     </button>
          </div>
          
-{/* Mobile Wishlist & Cart */}
-<div className="flex gap-3">
-  <Link
-    to="/wishlist"
-    onClick={() => setmenuOpen(false)}
-    className="flex-1 flex items-center justify-center gap-2 border border-orange-200 rounded-xl py-3 text-zinc-800 hover:bg-orange-50"
-  >
-    <GoHeartFill className="text-orange-500 text-xl" />
-    <span>Wishlist</span>
-  </Link>
-
-  <Link
-    to="/cart"
-    onClick={() => setmenuOpen(false)}
-    className="flex-1 flex items-center justify-center gap-2 border border-orange-200 rounded-xl py-3 text-zinc-800 hover:bg-orange-50"
-  >
-    <HiShoppingBag className="text-orange-500 text-xl" />
-    <span>Cart ({cartCount})</span>
-  </Link>
-</div>
-
     {/* Mobile Search Dropdown */}
     {search.trim() && (
       <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-xl w-full p-3 max-h-60 overflow-y-auto z-50">
