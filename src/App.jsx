@@ -8,7 +8,7 @@ import Home from "./components/Home/Home";
 import CategoryPage from "./components/CategoryPage/CategoryPage";
 import AllProducts from "./components/AllProducts/AllProducts";
 import { useState, useEffect } from "react";
-import Wishlist from "./components/Wishlist/Wishlist";
+import Wishlist from "./components/Wishlist/WishList.jsx";
 import Cart from "./components/Cart/Cart";
 
 function App() {
